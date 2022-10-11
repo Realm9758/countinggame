@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color:darkslategrey;
+    font-family: 'Inter', sans-serif;
+    align-content: center;
+    align-self: center;
+}
+button{
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  button {
+     width: 100%;
+  }
+}
