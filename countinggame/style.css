@@ -7,9 +7,18 @@ body{
     align-self: center;
 }
 button{
-    border-radius: 5px;
-    padding: 1rem;
+    border-radius: 20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+  color: white;
+  background-color: black;
 }
 @media screen and (max-width: 300px) {
   span.psw {
