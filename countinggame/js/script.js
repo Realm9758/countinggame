@@ -1,59 +1,41 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-canvas.width = 500;
-canvas.height = 700;
-const explosions = [];
-let canvasPosition = canvas.getBoundingClientRect();
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let timeToNextRaven = 0;
+let ravenInterval = 500;
+let lastTime = 0;
 
-class Explosion {
-    constructor(x, y){
-        this.spriteWidth = 200;
-        this.spriteHeight= 179;
-        this.width = this.spriteWidth * 0.7;
-        this.height = this.spriteHeight * 0.7;
-        this.x = x;
-        this.y = y;
-        this.image = new Image();
-        this.image.src = "boom.png";
-        this.frame = 0;
-        this.timer = 0;
-        this.angle = Math.random() * 6.2;
+class Raven {
+    constructor(){
+        this.Width = 100;
+        this.Height= 50;
+        this.x = canvas.width;
+        this.y = Math.random() * (canvas.height - this.height);
+        this.directionX = Math.random() * 5 + 3 ;
+        this.directionY = Math.random() * 5 - 2.5;
     }
     update(){ 
-        this.timer++;
-        if (this.timer % 10 === 0){
-            this.frame++;
-        };
+        this.x -= this.directionX;
     }
     draw(){
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.angle);
-        ctx.drawImage(this.image, this.spriteWidth * this.frame, 0, this.spriteWidth, this.spriteHeight, 0 - this.width/2, 0 - this.height/2, this.width, this.height);
-        ctx.restore();
+        ctx.fillRect(this.x, this.y, this.Width, this.Height);
     }
 }
 
-window.addEventListener("click", function(e){
-    createAnimation(e)
-});
 
-function createAnimation(e){
-    let positionX = e.x - canvasPosition.left;
-    let positionY = e.y - canvasPosition.top;
-    explosions.push(new Explosion(positionX, positionY));
-}
 
-function animate(){
+function animate(timestamp){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < explosions.length; i++){
-        explosions[i].update();
-        explosions[i].draw();
-        if(explosions[i].frame > 5 ){
-            explosions.splice(i, 1);
-            i--;
-        }
-    }
+    let deltaTime = timestamp - lastTime;
+    lastTime = timestamp;
+    timeToNextRaven += deltaTime;
+    if (timeToNextRaven > ravenInterval){
+        Raven.push(new Raven());
+        timeToNextRaven = 0;
+    };
+    [...ravens].forEach(object => object.update());
+    [...ravens].forEach(object => object.draw());
     requestAnimationFrame(animate);
-};
-animate();
+}
+animate(); 
