@@ -33,6 +33,21 @@ button:hover{
   float:left;
   padding-bottom: 10rem;
 }
+div input{
+  border: blue solid 4px;
+  text-align: center;
+  height: 50px;
+  
+}
+#submitguess{
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#submitguess:hover{
+  background-color: lightblue;
+}
+
 .btn-group button {
   background-color: white; /* Green background */
   border: 5px solid green; /* Green border */

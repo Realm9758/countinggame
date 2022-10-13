@@ -5,6 +5,7 @@ let counterPlusElem = document.querySelector('.counter-plus');
 let counterPlusRand1 = document.querySelector('.counter-rand1');
 let counterPlusRand2 = document.querySelector('.counter-rand2');
 let counterPlusRand3 = document.querySelector('.counter-rand3');
+let counterPlusRand4 = document.querySelector('.counter-rand4');
 
 let count = 0;
 updateDisplay();
@@ -36,6 +37,16 @@ counterPlusRand3.addEventListener("click",()=>{
     count+=y;
     updateDisplay();
 });
+counterPlusRand4.addEventListener("click",()=>{
+  var max = document.getElementById('guessFieldMax').value;
+  var min = document.getElementById('guessFieldMin').value;
+  var i = Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+  count+=i;
+  updateDisplay();
+});
+
+
+
 function updateDisplay(){
     counterDisplayElem.innerHTML = count;
 };
