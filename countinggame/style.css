@@ -112,3 +112,50 @@ input[type=submit]:hover {
   background-color: darkgreen;
   color: white;
 }
+
+@media only screen and (width: 390px) {
+  .btn-group button {
+  background-color: white; /* Green background */
+  border: 2px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 10px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+  .btn-group2 button {
+  background-color: white; /* Green background */
+  border: 2px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 10px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+input[type=text], select {
+  width: 20%;
+  padding: 2px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+label{
+  font-size: 1rem;
+}
+
+}
