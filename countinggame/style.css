@@ -7,13 +7,13 @@ body{
     align-self: center;
 }
 button{
-    border-radius: 20px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px;
+    text-align:center;
     cursor: pointer;
     transition: 0.2s;
+}
+.counter-display{
+  font-size: 5rem;
 }
 
 button:hover{
@@ -28,4 +28,51 @@ button:hover{
   button {
      width: 100%;
   }
+}
+.btn-group{
+  float:left;
+  padding-bottom: 10rem;
+}
+.btn-group button {
+  background-color: white; /* Green background */
+  border: 5px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 40px 100px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.btn-group2{
+  float:right;
+  padding-bottom: 10rem;
+}
+.btn-group2 button {
+  background-color: white; /* Green background */
+  border: 5px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 40px 100px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group2 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group2 button:hover {
+  background-color: darkgreen;
+  color: white;
 }
