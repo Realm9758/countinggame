@@ -33,12 +33,33 @@ button:hover{
   float:left;
   padding-bottom: 10rem;
 }
-div input{
-  border: blue solid 4px;
-  text-align: center;
-  height: 50px;
-  
+
+input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 #submitguess{
   cursor: pointer;
   transition: 0.2s;
