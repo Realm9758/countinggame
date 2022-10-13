@@ -105,7 +105,7 @@ input[type=submit]:hover {
   color: white;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 700px) {
     .btn-group button {
     background-color: white; /* Green background */
     border: 2px solid green; /* Green border */
