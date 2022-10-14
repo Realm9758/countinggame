@@ -1,10 +1,10 @@
 let counterDisplayElem = document.querySelector('.counter-display');
-let counterMinusElem = document.querySelector('.counter-minus');
-let counterMinusEleme = document.querySelector('.counter-minusr');
-let counterPlusElem = document.querySelector('.counter-plus');
-let counterPlusRand1 = document.querySelector('.counter-rand1');
-let counterPlusRand2 = document.querySelector('.counter-rand2');
-let counterPlusRand3 = document.querySelector('.counter-rand3');
+let counterMinusElem = document.querySelector('.bn4');
+let counterMinusEleme = document.querySelector('.bn5');
+let counterPlusElem = document.querySelector('.bn3');
+let counterPlusRand1 = document.querySelector('.bn7');
+let counterPlusRand2 = document.querySelector('.bn8');
+let counterPlusRand3 = document.querySelector('bn9');
 let counterPlusRand4 = document.querySelector('.counter-rand4');
 
 let count = 0;

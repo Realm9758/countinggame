@@ -1,40 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-body{
-    background-color:darkslategrey;
-    font-family: 'Inter', sans-serif;
-    align-content: center;
-    align-self: center;
+body {
+  background-color: darkslategrey;
+  font-family: "Inter", sans-serif;
+  align-content: center;
+  align-self: center;
 }
-button{
-    padding: 30px;
-    text-align:center;
-    cursor: pointer;
-    transition: 0.2s;
+button {
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
-.counter-display{
+.counter-display {
   font-size: 5rem;
 }
 
-button:hover{
+button:hover {
   color: white;
   background-color: black;
 }
 @media screen and (max-width: 300px) {
   span.psw {
-     display: block;
-     float: none;
+    display: block;
+    float: none;
   }
   button {
-     width: 100%;
+    width: 100%;
   }
 }
-.btn-group{
-  float:left;
+.btn-group {
+  float: left;
   padding-bottom: 10rem;
 }
 
-input[type=text], select {
+input[type="text"],
+select {
   width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -44,9 +45,9 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 20%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -56,16 +57,16 @@ input[type=submit] {
   text-align: center;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-#submitguess{
+#submitguess {
   cursor: pointer;
   transition: 0.2s;
 }
 
-#submitguess:hover{
+#submitguess:hover {
   background-color: lightblue;
 }
 
@@ -89,8 +90,8 @@ input[type=submit]:hover {
   color: white;
 }
 
-.btn-group2{
-  float:right;
+.btn-group2 {
+  float: right;
   padding-bottom: 10rem;
 }
 .btn-group2 button {
@@ -112,3 +113,130 @@ input[type=submit]:hover {
   background-color: darkgreen;
   color: white;
 }
+
+.bn3 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn3:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.bn4 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn4:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.bn5 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn5:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.bn7 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn7:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.bn8 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn8:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.bn9 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn9:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+

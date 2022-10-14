@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-  <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <script src="https://kit.fontawesome.com/ab264822a8.js" crossorigin="anonymous"></script>
-        <script defer src="app.js"></script>
-        <title>Number Generator</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        </head>
-        <body>
-            <center>
-            <h1>Number Generator</h1>
-            <h1 class="counter-display">(..)</h1>
-            </center>
-            <div class="btn-group">
-                   
-            <button class="counter-plus">Increase</button>
-            <button class="counter-minus">Decrease</button>
-            <button class="counter-minusr">Reset</button>
-            </div> 
-            <div class="btn-group2">
-            <button class="counter-rand1">Random Number 1 - 10</button>
-            <button class="counter-rand2">Random Number 1 - 100</button>
-            <button class="counter-rand3">Random Number 1 - 1000</button>
-            </div> 
-            <div class="counter-rand4">
-    <label for="guessField"><strong>Input to numbers</strong></label>
-    <input type = "text" id = "guessFieldMin" placeholder="min number..." class = "guessField">
-    <input type = "text" id = "guessFieldMax" placeholder="max number..." class = "guessField">
-    <input type = "submit" value = "Generate the number" 
-           class = "counter-rand4" id = "submitguess">
-</div>
-        
-        </body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ab264822a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="app.js"></script>
+    <title>Number Generator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <center>
+      <h1>Number Generator</h1>
+      <h1 class="counter-display">(..)</h1>
+    </center>
+    <div class="btn-group">
+      <a href="#" class="bn3">Increase</a>
+      <a href="#" class="bn4">Decrease</a>
+      <a href="#" class="bn5">Reset</a>
+    </div>
+    <div class="btn-group2">
+      <a href="#" class="bn7">Random number 1-10</a>
+      <a href="#" class="bn8">Random number 1-100</a>
+      <a href="#" class="bn9">Random number 1-1000</a>
+    </div>
+    <div class="counter-rand4">
+      <input
+        type="text"
+        id="guessFieldMin"
+        placeholder="min number..."
+        class="guessField"
+      />
+      <input
+        type="text"
+        id="guessFieldMax"
+        placeholder="max number..."
+        class="guessField"
+      />
+      <input
+        type="submit"
+        value="Generate the random number"
+        class="counter-rand4"
+        id="submitguess"
+      />
+    </div>
+  </body>
 </html>
